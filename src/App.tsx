@@ -11,6 +11,7 @@ import Alumni from "./pages/Alumni";
 import Admissions from "./pages/Admissions";
 import InstitutionalDays from "./pages/InstitutionalDays";
 import PublicAccountant from "./pages/PublicAccountant";
+import Careers from "./pages/Careers";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/graduados" element={<Alumni />} />
           <Route path="/admisiones" element={<Admissions />} />
           <Route path="/jornadas" element={<InstitutionalDays />} />
+          <Route path="/carreras" element={<Careers />} />
           <Route path="/carreras/contador-publico" element={<PublicAccountant />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -1,12 +1,14 @@
 
 import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
   
   useEffect(() => {
     const handleScroll = () => {
@@ -19,8 +21,17 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Close mobile menu when route changes
+    setIsOpen(false);
+  }, [location.pathname]);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const isActive = (path: string) => {
+    return location.pathname === path;
   };
 
   return (
@@ -49,29 +60,51 @@ const Header = () => {
           
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link to="/" className="nav-link active-nav-link font-medium">Inicio</Link>
+            <Link 
+              to="/" 
+              className={cn("nav-link font-medium", 
+                isActive("/") && "active-nav-link")}
+            >
+              Inicio
+            </Link>
+            
             <div className="relative group">
               <button className="nav-link font-medium flex items-center">
                 Institucional <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               <div className="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden z-50">
                 <Link to="/historia" className="block px-4 py-2 hover:bg-gray-100">Historia</Link>
-                <Link to="/autoridades" className="block px-4 py-2 hover:bg-gray-100">Autoridades</Link>
-                <Link to="/proyecto-educativo" className="block px-4 py-2 hover:bg-gray-100">Proyecto Educativo</Link>
+                <Link to="/sedes" className="block px-4 py-2 hover:bg-gray-100">Sedes</Link>
               </div>
             </div>
+            
             <div className="relative group">
               <button className="nav-link font-medium flex items-center">
                 Académica <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               <div className="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden z-50">
-                <Link to="/carreras/profesorado" className="block px-4 py-2 hover:bg-gray-100">Profesorado</Link>
-                <Link to="/carreras/licenciaturas" className="block px-4 py-2 hover:bg-gray-100">Licenciaturas</Link>
-                <Link to="/carreras/preceptoria" className="block px-4 py-2 hover:bg-gray-100">Preceptoría</Link>
+                <Link to="/carreras" className="block px-4 py-2 hover:bg-gray-100">Carreras</Link>
+                <Link to="/jornadas" className="block px-4 py-2 hover:bg-gray-100">Jornadas Institucionales</Link>
+                <Link to="/graduados" className="block px-4 py-2 hover:bg-gray-100">Graduados</Link>
               </div>
             </div>
-            <Link to="/noticias" className="nav-link font-medium">Noticias</Link>
-            <Link to="/contacto" className="nav-link font-medium">Contacto</Link>
+            
+            <Link 
+              to="/carreras/contador-publico" 
+              className={cn("nav-link font-medium", 
+                isActive("/carreras/contador-publico") && "active-nav-link")}
+            >
+              Contador Público
+            </Link>
+            
+            <Link 
+              to="/admisiones" 
+              className={cn("nav-link font-medium", 
+                isActive("/admisiones") && "active-nav-link")}
+            >
+              Admisiones
+            </Link>
+            
             <a 
               href="https://sedes.infd.edu.ar/aula/" 
               target="_blank" 
@@ -95,24 +128,23 @@ const Header = () => {
       {/* Mobile menu */}
       <div className={`lg:hidden ${isOpen ? "block" : "hidden"} bg-white shadow-lg`}>
         <div className="container mx-auto px-4 py-4 space-y-3">
-          <Link to="/" className="block py-2 nav-link active-nav-link" onClick={toggleMenu}>Inicio</Link>
+          <Link to="/" className="block py-2 nav-link">Inicio</Link>
           
           <div className="py-2 border-t border-gray-200">
             <p className="text-institutional-dark font-medium mb-2">Institucional</p>
-            <Link to="/historia" className="block py-1 pl-4 hover:text-institutional" onClick={toggleMenu}>Historia</Link>
-            <Link to="/autoridades" className="block py-1 pl-4 hover:text-institutional" onClick={toggleMenu}>Autoridades</Link>
-            <Link to="/proyecto-educativo" className="block py-1 pl-4 hover:text-institutional" onClick={toggleMenu}>Proyecto Educativo</Link>
+            <Link to="/historia" className="block py-1 pl-4 hover:text-institutional">Historia</Link>
+            <Link to="/sedes" className="block py-1 pl-4 hover:text-institutional">Sedes</Link>
           </div>
           
           <div className="py-2 border-t border-gray-200">
             <p className="text-institutional-dark font-medium mb-2">Académica</p>
-            <Link to="/carreras/profesorado" className="block py-1 pl-4 hover:text-institutional" onClick={toggleMenu}>Profesorado</Link>
-            <Link to="/carreras/licenciaturas" className="block py-1 pl-4 hover:text-institutional" onClick={toggleMenu}>Licenciaturas</Link>
-            <Link to="/carreras/preceptoria" className="block py-1 pl-4 hover:text-institutional" onClick={toggleMenu}>Preceptoría</Link>
+            <Link to="/carreras" className="block py-1 pl-4 hover:text-institutional">Carreras</Link>
+            <Link to="/jornadas" className="block py-1 pl-4 hover:text-institutional">Jornadas Institucionales</Link>
+            <Link to="/graduados" className="block py-1 pl-4 hover:text-institutional">Graduados</Link>
           </div>
           
-          <Link to="/noticias" className="block py-2 border-t border-gray-200 nav-link" onClick={toggleMenu}>Noticias</Link>
-          <Link to="/contacto" className="block py-2 border-t border-gray-200 nav-link" onClick={toggleMenu}>Contacto</Link>
+          <Link to="/carreras/contador-publico" className="block py-2 border-t border-gray-200 nav-link">Contador Público</Link>
+          <Link to="/admisiones" className="block py-2 border-t border-gray-200 nav-link">Admisiones</Link>
           
           <div className="pt-2 border-t border-gray-200">
             <a 
@@ -120,7 +152,6 @@ const Header = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-primary block text-center"
-              onClick={toggleMenu}
             >
               Campus Virtual
             </a>
