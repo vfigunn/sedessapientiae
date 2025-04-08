@@ -1,0 +1,25 @@
+
+This directory will contain all the website images. 
+
+For this implementation, please replace these placeholder references with actual images:
+
+1. /assets/images/logo.png - Institute logo
+2. /assets/images/logo-white.png - White version of the logo for dark backgrounds
+3. /assets/images/students.png - Image of students for the hero section
+4. /assets/images/building.jpg - Image of the institute building
+5. /assets/images/pattern.png - Background pattern for the hero section
+6. /assets/images/favicon.png - Website favicon
+
+News images:
+7. /assets/images/news/inscripciones.jpg
+8. /assets/images/news/puertas-abiertas.jpg
+9. /assets/images/news/conferencia.jpg
+
+Testimonial avatars:
+10. /assets/images/testimonials/testimonial-1.jpg
+11. /assets/images/testimonials/testimonial-2.jpg
+12. /assets/images/testimonials/testimonial-3.jpg
+13. /assets/images/testimonials/testimonial-4.jpg
+
+OpenGraph image:
+14. /assets/images/sede-sapientiae-og.jpg
