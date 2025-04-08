@@ -65,7 +65,7 @@ const InstitutionalDays = () => {
               en la formación integral de la persona a la luz de los valores cristianos.
             </p>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
               <div className="lg:col-span-2">
                 <Card>
                   <CardHeader className="bg-institutional text-white">
@@ -317,7 +317,43 @@ const InstitutionalDays = () => {
                   </CardContent>
                 </Card>
               </div>
+            </div> */}
+
+          <div className="mb-12">
+            <h2 className="text-2xl font-lora font-bold text-institutional mb-4">Hitos Importantes</h2>
+            <div className="space-y-6">
+              <div className="bg-white shadow-md rounded-lg p-6 card-hover">
+                <h3 className="text-xl font-lora font-semibold mb-2 text-institutional-light">1995</h3>
+                <p className="text-gray-700">Fundación del Instituto Superior de Formación Docente "Sede Sapientiae".</p>
+              </div>
+              <div className="bg-white shadow-md rounded-lg p-6 card-hover">
+                <h3 className="text-xl font-lora font-semibold mb-2 text-institutional-light">1998</h3>
+                <p className="text-gray-700">Reconocimiento oficial de los primeros programas educativos por parte del Ministerio de Educación.</p>
+              </div>
+              <div className="bg-white shadow-md rounded-lg p-6 card-hover">
+                <h3 className="text-xl font-lora font-semibold mb-2 text-institutional-light">2003</h3>
+                <p className="text-gray-700">Traslado a las instalaciones actuales y ampliación de la oferta académica.</p>
+              </div>
+              <div className="bg-white shadow-md rounded-lg p-6 card-hover">
+                <h3 className="text-xl font-lora font-semibold mb-2 text-institutional-light">2010</h3>
+                <p className="text-gray-700">Celebración del 15º aniversario y renovación del compromiso institucional con la formación docente de calidad.</p>
+              </div>
+              <div className="bg-white shadow-md rounded-lg p-6 card-hover">
+                <h3 className="text-xl font-lora font-semibold mb-2 text-institutional-light">2020</h3>
+                <p className="text-gray-700">Adaptación a la enseñanza virtual y desarrollo de nuevas metodologías educativas durante la pandemia.</p>
+              </div>
+              <div className="bg-white shadow-md rounded-lg p-6 card-hover">
+                <h3 className="text-xl font-lora font-semibold mb-2 text-institutional-light">2023</h3>
+                <p className="text-gray-700">Renovación del proyecto educativo institucional y lanzamiento de nuevas carreras con enfoque en las tecnologías educativas.</p>
+              </div>
             </div>
+          </div>
+
+
+
+
+
+
 
             {/* Disertantes */}
             <div className="mb-16">

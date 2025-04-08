@@ -18,23 +18,23 @@ const AcademicOfferSection = () => {
         <Tabs defaultValue="profesorado" className="w-full max-w-4xl mx-auto">
           <TabsList className="grid grid-cols-3 mb-8">
             <TabsTrigger value="profesorado" className="text-lg">Profesorado</TabsTrigger>
-            <TabsTrigger value="licenciaturas" className="text-lg">Licenciaturas</TabsTrigger>
-            <TabsTrigger value="preceptoria" className="text-lg">Preceptoría</TabsTrigger>
+            <TabsTrigger value="tecnicaturas" className="text-lg">Tecnicaturas</TabsTrigger>
+            <TabsTrigger value="degrado" className="text-lg">Carreras de Grado</TabsTrigger>
           </TabsList>
           
           <TabsContent value="profesorado">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <CarreraCard 
-                title="Profesorado de Educación Primaria"
+                title="Profesor/a de Secundaria en Lengua y Literatura"
                 description="Forma docentes para desempeñarse en el nivel primario del sistema educativo."
                 duration="4 años"
                 schedule="Turno mañana o tarde"
                 modalidad="Presencial"
-                link="/carreras/profesorado/educacion-primaria"
+                link="/carreras"
               />
               
               <CarreraCard 
-                title="Profesorado de Educación Inicial"
+                title="Profesor/a de Inglés"
                 description="Prepara educadores especializados en la enseñanza de niños de nivel inicial."
                 duration="4 años"
                 schedule="Turno mañana o tarde"
@@ -43,7 +43,7 @@ const AcademicOfferSection = () => {
               />
               
               <CarreraCard 
-                title="Profesorado de Ciencias Sagradas"
+                title="Profesor/a de Educación Secundaria en Historia"
                 description="Forma docentes para la enseñanza de la religión y ciencias sagradas."
                 duration="4 años"
                 schedule="Turno tarde"
@@ -52,7 +52,7 @@ const AcademicOfferSection = () => {
               />
               
               <CarreraCard 
-                title="Profesorado de Filosofía"
+                title="Profesorado de Educación Secundaria en Economía "
                 description="Prepara docentes para la enseñanza de la filosofía en niveles medio y superior."
                 duration="4 años"
                 schedule="Turno tarde"
@@ -62,10 +62,10 @@ const AcademicOfferSection = () => {
             </div>
           </TabsContent>
           
-          <TabsContent value="licenciaturas">
+          <TabsContent value="tecnicaturas">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <CarreraCard 
-                title="Licenciatura en Ciencias de la Educación"
+                title="Tecnicatura Superior en Análisis y Desarrollo de Software"
                 description="Profundiza en el conocimiento teórico-práctico de la educación y sus fundamentos."
                 duration="4 años"
                 schedule="Turno tarde"
@@ -73,21 +73,13 @@ const AcademicOfferSection = () => {
                 link="/carreras/licenciaturas/ciencias-educacion"
               />
               
-              <CarreraCard 
-                title="Licenciatura en Psicopedagogía"
-                description="Forma especialistas en procesos de aprendizaje y sus dificultades."
-                duration="4 años"
-                schedule="Turno mañana"
-                modalidad="Presencial"
-                link="/carreras/licenciaturas/psicopedagogia"
-              />
             </div>
           </TabsContent>
           
-          <TabsContent value="preceptoria">
+          <TabsContent value="degrado">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <CarreraCard 
-                title="Tecnicatura en Preceptoría"
+                title="Contador Público Nacional"
                 description="Forma para el acompañamiento y orientación de estudiantes en instituciones educativas."
                 duration="2 años"
                 schedule="Turno vespertino"
@@ -99,7 +91,7 @@ const AcademicOfferSection = () => {
         </Tabs>
         
         <div className="text-center mt-12">
-          <Link to="/inscripciones" className="btn-primary inline-flex items-center">
+          <Link to="/carreras" className="btn-primary inline-flex items-center">
             Ver todas las carreras <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </div>

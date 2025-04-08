@@ -45,7 +45,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/assets/images/logo.png" 
+              src="https://i.ibb.co/yFRH32dx/sedes-portada.png" 
               alt="Sedes Sapientiae Logo" 
               className="h-12 md:h-16" 
             />
@@ -53,8 +53,8 @@ const Header = () => {
               "hidden md:block transition-opacity duration-300",
               scrolled ? "opacity-100" : "opacity-0"
             )}>
-              <h1 className="text-lg font-semibold text-institutional">Instituto Superior</h1>
-              <h2 className="text-xl font-bold text-institutional-dark">Sedes Sapientiae</h2>
+              {/* <h1 className="text-lg font-semibold text-institutional">Instituto Superior</h1>
+              <h2 className="text-xl font-bold text-institutional-dark">Sedes Sapientiae</h2> */}
             </div>
           </Link>
           
@@ -106,7 +106,7 @@ const Header = () => {
             </Link>
             
             <a 
-              href="https://sedes.infd.edu.ar/aula/" 
+              href="https://www.sedesonline.edu.ar/login/index.php" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-primary"

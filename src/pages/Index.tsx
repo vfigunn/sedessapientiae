@@ -24,10 +24,10 @@ const Index = () => {
         {/* Institute Information Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="section-title mb-12">El Instituto Sedes Sapientiae</h2>
+            {/* <h2 className="section-title mb-12">El Instituto Sedes Sapientiae</h2> */}
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mb-12">
+              {/* <div>
                 <h3 className="text-2xl font-lora font-semibold text-institutional-dark mb-4">Nuestra Historia</h3>
                 <p className="text-gray-700 mb-4">
                   El Instituto Superior Sedes Sapientiae fue fundado en 1989 como una institución educativa 
@@ -52,7 +52,7 @@ const Index = () => {
                     Conocer más sobre nuestra historia →
                   </Link>
                 </div>
-              </div>
+              </div> */}
               <div className="flex flex-col justify-center">
                 <div className="grid grid-cols-2 gap-4">
                   <Card className="card-hover">
@@ -79,8 +79,8 @@ const Index = () => {
                   <Card className="card-hover">
                     <CardContent className="flex flex-col items-center pt-6 pb-4 text-center">
                       <MapPin className="h-12 w-12 text-institutional mb-3" />
-                      <h4 className="text-lg font-semibold text-institutional-dark">2 Sedes</h4>
-                      <p className="text-gray-600 text-sm mt-1">Caballito y Villa Crespo</p>
+                      <h4 className="text-lg font-semibold text-institutional-dark">Gualeguaychú</h4>
+                      <p className="text-gray-600 text-sm mt-1">Entre Ríos, Argentina</p>
                     </CardContent>
                   </Card>
                 </div>

@@ -11,11 +11,11 @@ const Footer = () => {
           {/* Institute Info */}
           <div>
             <img 
-              src="/assets/images/logo-white.png" 
+              src="https://i.ibb.co/yFRH32dx/sedes-portada.png" 
               alt="Sedes Sapientiae Logo" 
               className="h-20 mb-4" 
             />
-            <h3 className="text-xl font-bold mb-4">Instituto Superior Sedes Sapientiae</h3>
+            <h3 className="text-xl font-bold mb-4">Instituto Sedes Sapientiae</h3>
             <p className="text-gray-300 mb-4">
               Formación académica con valores cristianos desde 1959
             </p>

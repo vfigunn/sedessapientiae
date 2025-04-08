@@ -43,28 +43,31 @@ const Historia = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div>
               <p className="mb-4 text-gray-700">
-                El Instituto Superior de Formación Docente "Sede Sapientiae" nació como un proyecto educativo en el año 1995, 
-                con el objetivo de formar docentes con excelencia académica y valores cristianos, bajo el lema "La Verdad os hará libres".
+              El Instituto Sedes Sapientiae se crea para dar respuesta a la inquietud de la juventud estudiosa de perfeccionar su nivel cultural en una orientación cristiana de su vida, con una vocación auténtica de saber. Lo funda en abril de 1963 el entonces obispo de Gualeguaychú Mons. Ramón Chalup.
               </p>
               <p className="mb-4 text-gray-700">
-                Fundado por un grupo de profesionales comprometidos con la educación y la formación integral de futuros docentes, 
-                el instituto comenzó sus actividades en un pequeño edificio en el barrio de Caballito, Ciudad Autónoma de Buenos Aires.
+              La entidad propietaria del Instituto es el Obispado de Gualeguaychú, quien a partir del año 2000 ha encomendado a la Asociación de las Servidoras la rectoría del Instituto y el asesoramiento en la gestión académica a través del Centro de Investigaciones en Antropología Filosófica y Cultural (CIAFIC). El obispado conserva la gestión económica y administrativa del Instituto.
               </p>
+              <p><b className="underline underline-offset-1">AUTORIDADES:</b></p>
               <p className="mb-4 text-gray-700">
-                La institución recibe su nombre "Sede Sapientiae" (Sede de la Sabiduría) como una invocación a la búsqueda constante 
-                del conocimiento y la verdad, valores fundamentales en el proceso educativo que proponemos a nuestros estudiantes.
+                <ul>
+                  <li><b>Rectora</b> Lic. Marisa Menta - rectoria@sedessapientiae.edu.ar</li>
+                  <li><b>Vicerectora</b> Prof. María de los Milagros Casanova</li>
+                  <li><b>Secretaria</b> Prof. Daniela Mª Florencia Valiente</li>
+                  <li><b>Apoderada</b> Legal Sra. María Adela Aranda de Montagno</li>
+                </ul>
               </p>
             </div>
             <div className="bg-gray-200 h-72 md:h-full rounded-lg overflow-hidden">
               <img 
-                src="/assets/images/building.jpg" 
+                src="https://i.ibb.co/w5vdD4D/Captura-de-pantalla-2025-04-08-011950.png" 
                 alt="Edificio histórico del Instituto" 
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
           
-          <div className="mb-12">
+          {/* <div className="mb-12">
             <h2 className="text-2xl font-lora font-bold text-institutional mb-4">Hitos Importantes</h2>
             <div className="space-y-6">
               <div className="bg-white shadow-md rounded-lg p-6 card-hover">
@@ -92,29 +95,9 @@ const Historia = () => {
                 <p className="text-gray-700">Renovación del proyecto educativo institucional y lanzamiento de nuevas carreras con enfoque en las tecnologías educativas.</p>
               </div>
             </div>
-          </div>
+          </div> */}
           
-          <div className="bg-institutional-light bg-opacity-10 rounded-lg p-8">
-            <h2 className="text-2xl font-lora font-bold text-institutional mb-4">Misión y Visión</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-semibold mb-3 text-institutional">Nuestra Misión</h3>
-                <p className="text-gray-700">
-                  Formar educadores comprometidos con la excelencia académica y los valores humanos, 
-                  capaces de transformar la realidad social a través de una práctica profesional ética, 
-                  reflexiva y orientada al servicio.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-3 text-institutional">Nuestra Visión</h3>
-                <p className="text-gray-700">
-                  Ser una institución educativa referente en la formación docente, 
-                  reconocida por su calidad académica, innovación pedagógica y compromiso con la formación integral 
-                  de profesionales que contribuyan significativamente al desarrollo educativo del país.
-                </p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </main>
       <Footer />
