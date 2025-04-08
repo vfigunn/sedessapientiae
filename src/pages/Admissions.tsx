@@ -79,7 +79,7 @@ const Admissions = () => {
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-center">
                       <Calendar className="h-5 w-5 text-institutional mr-2 flex-shrink-0" />
-                      <span><strong>Noviembre 2024 - Febrero 2025:</strong> Período de inscripción</span>
+                      <span><strong>Noviembre 2024 - Marzo 2025:</strong> Período de inscripción</span>
                     </li>
                     <li className="flex items-center">
                       <Calendar className="h-5 w-5 text-institutional mr-2 flex-shrink-0" />
@@ -93,8 +93,7 @@ const Admissions = () => {
                     La Secretaría Académica atiende consultas e inscripciones en los siguientes horarios:
                   </p>
                   <ul className="text-gray-700">
-                    <li>Lunes a viernes: 9:00 a 12:30 y 16:30 a 20:30</li>
-                    <li>Sábados: 9:00 a 12:00</li>
+                    <li>Lunes a viernes: 17:00 a 21:00</li>
                   </ul>
                 </div>
               </div>
@@ -115,29 +114,10 @@ const Admissions = () => {
                     </CardHeader>
                     <CardContent>
                       <ul className="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Profesorado de Educación Secundaria en Filosofía</li>
-                        <li>Profesorado de Educación Secundaria en Ciencias Sagradas</li>
-                      </ul>
-                      <div className="mt-6">
-                        <Link 
-                          to="/carreras" 
-                          className="text-institutional hover:text-institutional-dark transition-colors duration-200 font-medium"
-                        >
-                          Ver planes de estudio →
-                        </Link>
-                      </div>
-                    </CardContent>
-                  </Card>
-                  
-                  <Card className="card-hover">
-                    <CardHeader>
-                      <CardTitle>Licenciaturas</CardTitle>
-                      <CardDescription>Duración: 5 años</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Licenciatura en Filosofía</li>
-                        <li>Licenciatura en Ciencias Sagradas</li>
+                        <li>Profesor/a de Inglés</li>
+                        <li>Profesor/a de Secundaria en Lengua y Literatura</li>
+                        <li>Profesor/a de Educación Secundaria en Historia</li>
+                        <li>Profesor/a de Educación Secundaria en Economía</li>
                       </ul>
                       <div className="mt-6">
                         <Link 
@@ -153,11 +133,32 @@ const Admissions = () => {
                   <Card className="card-hover">
                     <CardHeader>
                       <CardTitle>Tecnicaturas</CardTitle>
-                      <CardDescription>Duración: 2 años</CardDescription>
+                      <CardDescription>Duración: 3 años</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <ul className="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Tecnicatura Superior en Preceptoría</li>
+                        <li>Tecnicatura Superior en Análisis y Desarrollo de Software</li>
+                        <li>Tecnicatura Superior Administración Contable</li>
+                      </ul>
+                      <div className="mt-6">
+                        <Link 
+                          to="/carreras" 
+                          className="text-institutional hover:text-institutional-dark transition-colors duration-200 font-medium"
+                        >
+                          Ver planes de estudio →
+                        </Link>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card className="card-hover">
+                    <CardHeader>
+                      <CardTitle>Carreras de Grado</CardTitle>
+                      <CardDescription>Duración: 5 años</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Contador Público Nacional</li>
                       </ul>
                       <div className="mt-6">
                         <Link 
@@ -319,7 +320,7 @@ const Admissions = () => {
           </div>
         </section>
 
-        {/* Contact Section */}
+        {/* Contact Section
         <section id="contacto" className="py-12 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="bg-institutional text-white rounded-lg p-8">
@@ -356,7 +357,7 @@ const Admissions = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </div>

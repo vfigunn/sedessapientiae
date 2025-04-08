@@ -26,38 +26,38 @@ const AcademicOfferSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <CarreraCard 
                 title="Profesor/a de Secundaria en Lengua y Literatura"
-                description="Forma docentes para desempeñarse en el nivel primario del sistema educativo."
+                description="El egresado podrá enseñar, investigar, redactar, corregir y asesorar en lengua y literatura."
                 duration="4 años"
-                schedule="Turno mañana o tarde"
+                schedule="Turno tarde/noche"
                 modalidad="Presencial"
                 link="/carreras"
               />
               
               <CarreraCard 
                 title="Profesor/a de Inglés"
-                description="Prepara educadores especializados en la enseñanza de niños de nivel inicial."
+                description="Puede ejercer la docencia en distintos ámbitos y la creciente demanda del inglés genera una alta necesidad de profesores capacitados."
                 duration="4 años"
-                schedule="Turno mañana o tarde"
+                schedule="Turno tarde/noche"
                 modalidad="Presencial"
-                link="/carreras/profesorado/educacion-inicial"
+                link="/carreras"
               />
               
               <CarreraCard 
                 title="Profesor/a de Educación Secundaria en Historia"
-                description="Forma docentes para la enseñanza de la religión y ciencias sagradas."
+                description="El egresado podrá enseñar e investigar en historia, asesorar y participar en proyectos culturales, educativos y de reconstrucción histórica en diversos ámbitos."
                 duration="4 años"
-                schedule="Turno tarde"
+                schedule="Turno tarde/noche"
                 modalidad="Presencial"
-                link="/carreras/profesorado/ciencias-sagradas"
+                link="/carreras"
               />
               
               <CarreraCard 
-                title="Profesorado de Educación Secundaria en Economía "
-                description="Prepara docentes para la enseñanza de la filosofía en niveles medio y superior."
+                title="Profesor/a de Educación Secundaria en Economía "
+                description="El título de docente habilita para el dictado de todas las materias de nivel secundario relacionadas con el área económica."
                 duration="4 años"
-                schedule="Turno tarde"
+                schedule="Turno tarde/noche"
                 modalidad="Presencial"
-                link="/carreras/profesorado/filosofia"
+                link="/carreras"
               />
             </div>
           </TabsContent>
@@ -66,11 +66,25 @@ const AcademicOfferSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <CarreraCard 
                 title="Tecnicatura Superior en Análisis y Desarrollo de Software"
-                description="Profundiza en el conocimiento teórico-práctico de la educación y sus fundamentos."
-                duration="4 años"
-                schedule="Turno tarde"
+                description="El egresado podrá trabajar de forma individual o en equipo, diseñando, programando, verificando y manteniendo software."
+                duration="3 años"
+                schedule="Turno tarde/noche"
                 modalidad="Presencial"
-                link="/carreras/licenciaturas/ciencias-educacion"
+                link="/carreras"
+              />
+              
+            </div>
+          </TabsContent>
+
+          <TabsContent value="tecnicaturas">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <CarreraCard 
+                title="Tecnicatura Superior Administración Contable"
+                description="Habilita al egresado para asistir en estudios contables en tareas de sueldos, impuestos, balances y trámites generales."
+                duration="3 años"
+                schedule="Turno tarde/noche"
+                modalidad="Presencial"
+                link="/carreras"
               />
               
             </div>
@@ -80,11 +94,11 @@ const AcademicOfferSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <CarreraCard 
                 title="Contador Público Nacional"
-                description="Forma para el acompañamiento y orientación de estudiantes en instituciones educativas."
-                duration="2 años"
-                schedule="Turno vespertino"
+                description="El egresado podrá elaborar y auditar estados contables, liquidar impuestos, realizar presupuestos, analizar costos y brindar asesoramiento impositivo y peritajes contables."
+                duration="5 años"
+                schedule="Turno tarde/noche"
                 modalidad="Presencial"
-                link="/carreras/preceptoria"
+                link="/carreras"
               />
             </div>
           </TabsContent>

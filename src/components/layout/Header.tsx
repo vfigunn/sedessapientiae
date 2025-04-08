@@ -62,8 +62,8 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-8">
             <Link 
               to="/" 
-              className={cn("nav-link font-medium", 
-                isActive("/") && "active-nav-link")}
+              className={cn("nav-link font-medium ", 
+                isActive("/") && "active-nav-link ")}
             >
               Inicio
             </Link>
@@ -102,7 +102,7 @@ const Header = () => {
               className={cn("nav-link font-medium", 
                 isActive("/admisiones") && "active-nav-link")}
             >
-              Admisiones
+              Inscripciones
             </Link>
             
             <a 
@@ -144,7 +144,7 @@ const Header = () => {
           </div>
           
           <Link to="/carreras/contador-publico" className="block py-2 border-t border-gray-200 nav-link">Contador Público</Link>
-          <Link to="/admisiones" className="block py-2 border-t border-gray-200 nav-link">Admisiones</Link>
+          <Link to="/admisiones" className="block py-2 border-t border-gray-200 nav-link">Inscripciones</Link>
           
           <div className="pt-2 border-t border-gray-200">
             <a 

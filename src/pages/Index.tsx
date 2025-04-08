@@ -58,14 +58,14 @@ const Index = () => {
                   <Card className="card-hover">
                     <CardContent className="flex flex-col items-center pt-6 pb-4 text-center">
                       <History className="h-12 w-12 text-institutional mb-3" />
-                      <h4 className="text-lg font-semibold text-institutional-dark">Desde 1989</h4>
+                      <h4 className="text-lg font-semibold text-institutional-dark">Desde 1963</h4>
                       <p className="text-gray-600 text-sm mt-1">Más de 30 años de trayectoria</p>
                     </CardContent>
                   </Card>
                   <Card className="card-hover">
                     <CardContent className="flex flex-col items-center pt-6 pb-4 text-center">
                       <Users className="h-12 w-12 text-institutional mb-3" />
-                      <h4 className="text-lg font-semibold text-institutional-dark">+2,500</h4>
+                      <h4 className="text-lg font-semibold text-institutional-dark">+12,500</h4>
                       <p className="text-gray-600 text-sm mt-1">Estudiantes graduados</p>
                     </CardContent>
                   </Card>

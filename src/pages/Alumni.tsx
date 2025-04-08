@@ -38,7 +38,7 @@ const Alumni = () => {
           <div className="container mx-auto px-4">
             <h1 className="section-title mb-8">Red de Graduados</h1>
             <p className="text-gray-700 max-w-3xl mb-12">
-              Los graduados del Instituto Superior Sedes Sapientiae forman parte de una comunidad 
+              Los graduados del Instituto de Profesorado Sedes Sapientiae forman parte de una comunidad 
               que mantiene vivo el espíritu y los valores de nuestra institución. Nuestra red de alumni 
               facilita la continuidad del vínculo con el instituto, ofreciendo oportunidades de desarrollo 
               profesional, formación continua y networking.
@@ -134,9 +134,9 @@ const Alumni = () => {
                 </div>
                 <div className="hidden md:block">
                   <img 
-                    src="/assets/images/placeholder.svg" 
+                    src="https://i.ibb.co/nNCdZfgc/header-alumnos01.png" 
                     alt="Graduados del Instituto" 
-                    className="rounded-lg h-64 w-full object-cover"
+                    className="rounded-lg h-64 w-full object-contain"
                   />
                 </div>
               </div>

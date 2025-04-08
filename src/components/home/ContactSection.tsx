@@ -23,7 +23,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Dirección</h4>
-                  <p className="text-white/80">Av. Gaona 1851, C1416DRG CABA, Argentina</p>
+                  <p className="text-white/80">Santa Fe 74 Gualeguaychú, Entre Ríos, Argentina</p>
                 </div>
               </div>
               
@@ -33,7 +33,9 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Teléfono</h4>
-                  <p className="text-white/80">(011) 4582-1635 / 8386</p>
+                  <p className="text-white/80">(+549) 3446-427177</p>
+                  <p className="text-white/80">(+549) 3446-427021</p>
+                  <p className="text-white/80">(+549) 3446-426865</p>
                 </div>
               </div>
               
@@ -44,7 +46,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold text-lg">Email</h4>
                   <a href="mailto:info@sedessapientiae.edu.ar" className="text-white/80 hover:text-white transition">
-                    info@sedessapientiae.edu.ar
+                    informes@sedessapientiae.edu.ar
                   </a>
                 </div>
               </div>
@@ -55,14 +57,13 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Horario de Atención</h4>
-                  <p className="text-white/80">Lunes a Viernes: 8:00 - 21:00</p>
-                  <p className="text-white/80">Sábados: 8:00 - 13:00</p>
+                  <p className="text-white/80">Lunes a Viernes: 18:00 - 22:00</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8">
+          <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 text-black">
             <h3 className="text-2xl font-bold mb-6 text-institutional">Envianos tu Consulta</h3>
             <form>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
@@ -107,7 +108,7 @@ const ContactSection = () => {
                   Teléfono
                 </label>
                 <input 
-                  type="tel" 
+                  type="number" 
                   id="telefono" 
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-institutional focus:border-transparent"
                 />

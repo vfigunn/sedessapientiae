@@ -57,7 +57,7 @@ const PublicAccountant = () => {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a 
-                    href="#plan-de-estudios" 
+                    href="/carreras" 
                     className="bg-white text-institutional py-2 px-4 rounded-md hover:bg-gray-100 transition-colors duration-200"
                   >
                     Ver plan de estudios
@@ -72,9 +72,9 @@ const PublicAccountant = () => {
               </div>
               <div className="hidden md:block">
                 <img 
-                  src="/assets/images/placeholder.svg" 
+                  src="https://i.ibb.co/tT3NQMB5/headerucsf01.png" 
                   alt="Estudiantes de Contaduría" 
-                  className="rounded-lg shadow-lg h-80 w-full object-cover"
+                  className="rounded-lg shadow-lg h-80 w-full object-fill"
                 />
               </div>
             </div>
@@ -94,9 +94,9 @@ const PublicAccountant = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-gray-700 space-y-2">
-                    <li>4 años (8 semestres)</li>
+                    <li>5 años</li>
                     <li>Modalidad presencial</li>
-                    <li>Horarios: mañana y noche</li>
+                    <li>Horarios: tarde y noche</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -112,7 +112,6 @@ const PublicAccountant = () => {
                   <ul className="list-disc list-inside text-gray-700 space-y-2">
                     <li>Contador Público</li>
                     <li>Título oficial con validez nacional</li>
-                    <li>Resolución Ministerial N° 1542/2019</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -126,9 +125,8 @@ const PublicAccountant = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-gray-700 space-y-2">
-                    <li>Inicio: Marzo 2026</li>
+                    <li>Inicio: Marzo 2025</li>
                     <li>Inscripciones: Noviembre a Febrero</li>
-                    <li>Ingreso: con curso de nivelación</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -206,375 +204,6 @@ const PublicAccountant = () => {
         {/* Study Plan */}
         <section id="plan-de-estudios" className="py-12">
           <div className="container mx-auto px-4">
-            <h2 className="section-title mb-8">Plan de Estudios</h2>
-            <p className="text-gray-700 max-w-3xl mb-8">
-              Nuestro plan de estudios está diseñado para proporcionar una formación integral, 
-              con un sólido fundamento teórico y práctico que permite al graduado desempeñarse con 
-              idoneidad en diversos ámbitos profesionales.
-            </p>
-
-            <Tabs defaultValue="primer-anio" className="mb-16">
-              <TabsList className="grid grid-cols-4 max-w-2xl mx-auto mb-8">
-                <TabsTrigger value="primer-anio">1° Año</TabsTrigger>
-                <TabsTrigger value="segundo-anio">2° Año</TabsTrigger>
-                <TabsTrigger value="tercer-anio">3° Año</TabsTrigger>
-                <TabsTrigger value="cuarto-anio">4° Año</TabsTrigger>
-              </TabsList>
-              <TabsContent value="primer-anio">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-lora font-semibold text-institutional-dark mb-4">Primer Semestre</h3>
-                    <Card>
-                      <CardContent className="p-6">
-                        <ul className="space-y-3">
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Contabilidad Básica</span>
-                            </div>
-                            <span className="text-sm text-gray-500">6 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Matemática I</span>
-                            </div>
-                            <span className="text-sm text-gray-500">6 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Introducción al Derecho</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Economía I</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Metodología del Estudio</span>
-                            </div>
-                            <span className="text-sm text-gray-500">2 créditos</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-lora font-semibold text-institutional-dark mb-4">Segundo Semestre</h3>
-                    <Card>
-                      <CardContent className="p-6">
-                        <ul className="space-y-3">
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Contabilidad Intermedia</span>
-                            </div>
-                            <span className="text-sm text-gray-500">6 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Matemática II</span>
-                            </div>
-                            <span className="text-sm text-gray-500">6 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Derecho Comercial</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Economía II</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Informática Aplicada</span>
-                            </div>
-                            <span className="text-sm text-gray-500">2 créditos</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-              </TabsContent>
-              <TabsContent value="segundo-anio">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-lora font-semibold text-institutional-dark mb-4">Tercer Semestre</h3>
-                    <Card>
-                      <CardContent className="p-6">
-                        <ul className="space-y-3">
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Contabilidad Avanzada</span>
-                            </div>
-                            <span className="text-sm text-gray-500">6 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Estadística</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Derecho Laboral</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Finanzas Públicas</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-lora font-semibold text-institutional-dark mb-4">Cuarto Semestre</h3>
-                    <Card>
-                      <CardContent className="p-6">
-                        <ul className="space-y-3">
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Costos</span>
-                            </div>
-                            <span className="text-sm text-gray-500">6 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Matemática Financiera</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Sociedades Comerciales</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Impuestos I</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-              </TabsContent>
-              <TabsContent value="tercer-anio">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-lora font-semibold text-institutional-dark mb-4">Quinto Semestre</h3>
-                    <Card>
-                      <CardContent className="p-6">
-                        <ul className="space-y-3">
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Contabilidad de Gestión</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Auditoría I</span>
-                            </div>
-                            <span className="text-sm text-gray-500">6 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Impuestos II</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Administración Financiera</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Ética Profesional</span>
-                            </div>
-                            <span className="text-sm text-gray-500">3 créditos</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-lora font-semibold text-institutional-dark mb-4">Sexto Semestre</h3>
-                    <Card>
-                      <CardContent className="p-6">
-                        <ul className="space-y-3">
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Estados Contables</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Auditoría II</span>
-                            </div>
-                            <span className="text-sm text-gray-500">6 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Procedimiento Fiscal</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Administración General</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Práctica Profesional I</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-              </TabsContent>
-              <TabsContent value="cuarto-anio">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-lora font-semibold text-institutional-dark mb-4">Séptimo Semestre</h3>
-                    <Card>
-                      <CardContent className="p-6">
-                        <ul className="space-y-3">
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Contabilidad Pública</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Auditoría Sistemas Informáticos</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Concursos y Quiebras</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Práctica Profesional II</span>
-                            </div>
-                            <span className="text-sm text-gray-500">5 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Electiva I</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-lora font-semibold text-institutional-dark mb-4">Octavo Semestre</h3>
-                    <Card>
-                      <CardContent className="p-6">
-                        <ul className="space-y-3">
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Contabilidad Internacional</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Actuación Judicial</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Electiva II</span>
-                            </div>
-                            <span className="text-sm text-gray-500">4 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Práctica Profesional III</span>
-                            </div>
-                            <span className="text-sm text-gray-500">6 créditos</span>
-                          </li>
-                          <li className="flex items-center justify-between">
-                            <div className="flex items-center">
-                              <BookOpen className="h-4 w-4 text-institutional mr-2" />
-                              <span>Trabajo Final de Carrera</span>
-                            </div>
-                            <span className="text-sm text-gray-500">6 créditos</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-              </TabsContent>
-            </Tabs>
 
             {/* CTA */}
             <div className="bg-institutional text-white rounded-lg p-8">
@@ -602,9 +231,9 @@ const PublicAccountant = () => {
                 </div>
                 <div className="hidden md:block">
                   <img 
-                    src="/assets/images/placeholder.svg" 
+                    src="https://i.ibb.co/d4412Gkb/headerucsf02.png" 
                     alt="Estudiantes en clase" 
-                    className="rounded-lg h-64 w-full object-cover"
+                    className="rounded-lg h-64 w-full object-contain"
                   />
                 </div>
               </div>
