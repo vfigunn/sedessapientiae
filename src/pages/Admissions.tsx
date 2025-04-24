@@ -225,7 +225,7 @@ const Admissions = () => {
                     </p>
                     <ul className="space-y-4">
                       <li>
-                        <a href="src\correlativas\planilla_inscripcion2025.pdf" className="flex items-center p-3 border border-gray-200 rounded-md hover:bg-gray-50 transition-colors" download={'planilla_inscirpcion2025.pdf'}>
+                        <a href="/correlativas/planilla_inscripcion2025.pdf" className="flex items-center p-3 border border-gray-200 rounded-md hover:bg-gray-50 transition-colors" download={'planilla_inscirpcion2025.pdf'}>
                           <Download className="h-5 w-5 text-institutional mr-3" />
                           <div>
                             <span className="block font-medium text-gray-800">Formulario de Inscripción</span>

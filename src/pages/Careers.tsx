@@ -78,7 +78,7 @@ const Careers = () => {
                       Puede ejercer la docencia en distintos ámbitos y la creciente demanda del inglés genera una alta necesidad de profesores capacitados.
                       </p>
                       <div className="mt-4">
-                        <a href="src\correlativas\profesorado-de-ingles_correlativas.pdf" className="text-institutional underline font-medium" download={'profesorado-de-ingles_correlativas.pdf'}>Descargar correlativas</a>
+                        <a href="/correlativas/profesorado-de-ingles_correlativas.pdf" className="text-institutional underline font-medium" download={'profesorado-de-ingles_correlativas.pdf'}>Descargar correlativas</a>
                         <Accordion type="single" collapsible>
                           <AccordionItem value="plan-ingles">
                             <AccordionTrigger className="text-institutional font-medium">
@@ -163,7 +163,7 @@ const Careers = () => {
                       El egresado podrá enseñar, investigar, redactar, corregir y asesorar en lengua y literatura.
                       </p>
                       <div className="mt-4">
-                      <a href="src\correlativas\correlativas_lengua_literatura.pdf" className="text-institutional underline font-medium" download={'correlativas_lengua_literatura.pdf'}>Descargar correlativas</a>
+                      <a href="/correlativas/correlativas_lengua_literatura.pdf" className="text-institutional underline font-medium" download={'correlativas_lengua_literatura.pdf'}>Descargar correlativas</a>
                         <Accordion type="single" collapsible>
                           <AccordionItem value="plan-literatura">
                             <AccordionTrigger className="text-institutional font-medium">
@@ -247,7 +247,7 @@ const Careers = () => {
                       El egresado podrá enseñar e investigar en historia, asesorar y participar en proyectos culturales, educativos y de reconstrucción histórica en diversos ámbitos.
                       </p>
                       <div className="mt-4">
-                      <a href="src\correlativas\correlativas_profesorado_historia.pdf" className="text-institutional underline font-medium" download={'correlativas_profesorado_historia.pdf'}>Descargar correlativas</a>
+                      <a href="/correlativas/correlativas_profesorado_historia.pdf" className="text-institutional underline font-medium" download={'correlativas_profesorado_historia.pdf'}>Descargar correlativas</a>
                         <Accordion type="single" collapsible>
                           <AccordionItem value="plan-literatura">
                             <AccordionTrigger className="text-institutional font-medium">
@@ -335,7 +335,7 @@ const Careers = () => {
                       El título de docente habilita para el dictado de todas las materias de nivel secundario relacionadas con el área económica.
                       </p>
                       <div className="mt-4">
-                      <a href="src\correlativas\correlativas_profesorado_economia.pdf" className="text-institutional underline font-medium" download={'correlativas_profesorado_economia.pdf'}>Descargar correlativas</a>
+                      <a href="/correlativas/correlativas_profesorado_economia.pdf" className="text-institutional underline font-medium" download={'correlativas_profesorado_economia.pdf'}>Descargar correlativas</a>
                         <Accordion type="single" collapsible>
                           <AccordionItem value="plan-literatura">
                             <AccordionTrigger className="text-institutional font-medium">
@@ -498,7 +498,7 @@ const Careers = () => {
                       Habilita al egresado para asistir en estudios contables en tareas de sueldos, impuestos, balances y trámites generales.
                       </p>
                       <div className="mt-4">
-                      <a href="src\correlativas\correlativas_administracion_contable.pdf" className="text-institutional underline font-medium" download={'correlativas_administracion_contable.pdf'}>Descargar correlativas</a>
+                      <a href="/correlativas/correlativas_administracion_contable.pdf" className="text-institutional underline font-medium" download={'correlativas_administracion_contable.pdf'}>Descargar correlativas</a>
                         <Accordion type="single" collapsible>
                           <AccordionItem value="plan-economia">
                             <AccordionTrigger className="text-institutional font-medium">
@@ -570,7 +570,7 @@ const Careers = () => {
                       El egresado podrá elaborar y auditar estados contables, liquidar impuestos, realizar presupuestos, analizar costos y brindar asesoramiento impositivo y peritajes contables.
                       </p>
                       <div className="mt-4">
-                      <a href="src\correlativas\correlativas_contador_publico_nacional.pdf" className="text-institutional underline font-medium" download={'correlativas_contador_publico_nacional.pdf'}>Descargar correlativas</a>
+                      <a href="/correlativas/correlativas_contador_publico_nacional.pdf" className="text-institutional underline font-medium" download={'correlativas_contador_publico_nacional.pdf'}>Descargar correlativas</a>
                         <Accordion type="single" collapsible>
                           <AccordionItem value="plan-computacion">
                             <AccordionTrigger className="text-institutional font-medium">
