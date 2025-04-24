@@ -429,7 +429,7 @@ const Careers = () => {
                       El egresado podrá trabajar de forma individual o en equipo, diseñando, programando, verificando y manteniendo software.
                       </p>
                       <div className="mt-4">
-                      <a href="src\correlativas\correlativas_Sistemas.pdf" className="text-institutional underline font-medium" download={'correlativas_sistemas.pdf'}>Descargar correlativas</a>
+                      <a href="correlativas\correlativas_Sistemas.pdf" className="text-institutional underline font-medium" download={'correlativas_sistemas.pdf'}>Descargar correlativas</a>
                         <Accordion type="single" collapsible>
                           <AccordionItem value="plan-historia">
                             <AccordionTrigger className="text-institutional font-medium">
