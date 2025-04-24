@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
           <div className="text-white text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in">
-              Instituto Superior<br />
+              Instituto de Profesorado<br />
               <span className="text-white/90">Sedes Sapientiae</span>
             </h1>
             <p className="text-xl mb-8 text-white/80 animate-fade-in" style={{animationDelay: "0.2s"}}>

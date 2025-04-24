@@ -188,11 +188,11 @@ const Admissions = () => {
                       </li>
                       <li className="flex items-start">
                         <CheckCircle2 className="h-5 w-5 text-institutional mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">4 fotos carnet 4x4</span>
+                        <span className="text-gray-700">2 fotos carnet 4x4</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle2 className="h-5 w-5 text-institutional mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">Certificado de aptitud psicofísica expedido por hospital público</span>
+                        <span className="text-gray-700">Comprobante de pago de matrícula</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle2 className="h-5 w-5 text-institutional mr-2 mt-0.5 flex-shrink-0" />
@@ -200,7 +200,7 @@ const Admissions = () => {
                       </li>
                     </ul>
 
-                    <h3 className="text-xl font-lora font-semibold text-institutional-dark mt-8 mb-4">Aranceles 2025</h3>
+                    {/* <h3 className="text-xl font-lora font-semibold text-institutional-dark mt-8 mb-4">Aranceles 2025</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <FileCheck className="h-5 w-5 text-institutional mr-2 mt-0.5 flex-shrink-0" />
@@ -214,7 +214,7 @@ const Admissions = () => {
                         <FileCheck className="h-5 w-5 text-institutional mr-2 mt-0.5 flex-shrink-0" />
                         <span className="text-gray-700">Descuentos por pago anual: 15% sobre el valor total de las cuotas</span>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
 
                   <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -225,29 +225,10 @@ const Admissions = () => {
                     </p>
                     <ul className="space-y-4">
                       <li>
-                        <a href="#" className="flex items-center p-3 border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">
+                        <a href="src\correlativas\planilla_inscripcion2025.pdf" className="flex items-center p-3 border border-gray-200 rounded-md hover:bg-gray-50 transition-colors" download={'planilla_inscirpcion2025.pdf'}>
                           <Download className="h-5 w-5 text-institutional mr-3" />
                           <div>
                             <span className="block font-medium text-gray-800">Formulario de Inscripción</span>
-                            <span className="text-gray-600 text-sm">PDF - 135KB</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="flex items-center p-3 border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">
-                          <Download className="h-5 w-5 text-institutional mr-3" />
-                          <div>
-                            <span className="block font-medium text-gray-800">Solicitud de Entrevista</span>
-                            <span className="text-gray-600 text-sm">PDF - 98KB</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="flex items-center p-3 border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">
-                          <Download className="h-5 w-5 text-institutional mr-3" />
-                          <div>
-                            <span className="block font-medium text-gray-800">Reglamento Institucional</span>
-                            <span className="text-gray-600 text-sm">PDF - 320KB</span>
                           </div>
                         </a>
                       </li>
