@@ -16,7 +16,7 @@ const Hero = () => {
               <span className="text-white/90">Sedes Sapientiae</span>
             </h1>
             <p className="text-xl mb-8 text-white/80 animate-fade-in" style={{animationDelay: "0.2s"}}>
-              Formando profesionales de la educación con valores cristianos desde 1959. <br />Comprometidos con la excelencia académica y el desarrollo integral.
+              Formando profesionales de la educación con valores cristianos desde 1963. <br />Comprometidos con la excelencia académica y el desarrollo integral.
             </p>
             {/* <div className="flex flex-wrap gap-4 animate-fade-in" style={{animationDelay: "0.4s"}}>
               <Link to="/inscripciones" className="bg-white hover:bg-gray-100 text-institutional-dark font-medium py-3 px-6 rounded-md transition-colors duration-200">
