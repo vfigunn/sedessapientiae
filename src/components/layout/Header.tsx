@@ -45,7 +45,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="https://i.ibb.co/yFRH32dx/sedes-portada.png" 
+              src={cn(scrolled ? "assets/images/logo-scrolled.png" : "assets/images/logo-extended.png")} 
               alt="Sedes Sapientiae Logo" 
               className="h-12 md:h-16" 
             />
@@ -53,8 +53,6 @@ const Header = () => {
               "hidden md:block transition-opacity duration-300",
               scrolled ? "opacity-100" : "opacity-0"
             )}>
-              {/* <h1 className="text-lg font-semibold text-institutional">Instituto Superior</h1>
-              <h2 className="text-xl font-bold text-institutional-dark">Sedes Sapientiae</h2> */}
             </div>
           </Link>
           

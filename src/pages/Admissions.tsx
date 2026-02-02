@@ -65,12 +65,12 @@ const Admissions = () => {
         {/* Process Section */}
         <section id="proceso-admision" className="py-12">
           <div className="container mx-auto px-4">
-            <h2 className="section-title mb-12">Inscripción 2025</h2>
+            <h2 className="section-title mb-12">Inscripción {new Date().getFullYear()}</h2>
             
             <div className="bg-institutional/10 rounded-lg p-8 mb-12">
               <h3 className="text-xl font-lora font-semibold text-institutional-dark mb-4">Información Importante</h3>
               <p className="text-gray-700 mb-6">
-                La inscripción para el ciclo lectivo 2025 ya está abierta. Te invitamos a completar el proceso 
+                La inscripción para el ciclo lectivo {new Date().getFullYear()} ya está abierta. Te invitamos a completar el proceso 
                 de admisión lo antes posible para asegurar tu lugar en la carrera de tu elección.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -79,11 +79,11 @@ const Admissions = () => {
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-center">
                       <Calendar className="h-5 w-5 text-institutional mr-2 flex-shrink-0" />
-                      <span><strong>Noviembre 2024 - Marzo 2025:</strong> Período de inscripción</span>
+                      <span><strong>Noviembre {new Date().getFullYear()-1} - Marzo {new Date().getFullYear()}:</strong> Período de inscripción</span>
                     </li>
                     <li className="flex items-center">
                       <Calendar className="h-5 w-5 text-institutional mr-2 flex-shrink-0" />
-                      <span><strong>Marzo 2025:</strong> Inicio de clases</span>
+                      <span><strong>Marzo {new Date().getFullYear()}:</strong> Inicio de clases</span>
                     </li>
                   </ul>
                 </div>
@@ -225,7 +225,7 @@ const Admissions = () => {
                     </p>
                     <ul className="space-y-4">
                       <li>
-                        <a href="/correlativas/planilla_inscripcion2025.pdf" className="flex items-center p-3 border border-gray-200 rounded-md hover:bg-gray-50 transition-colors" download={'planilla_inscirpcion2025.pdf'}>
+                        <a href="/correlativas/planilla_inscripcion2026.pdf" className="flex items-center p-3 border border-gray-200 rounded-md hover:bg-gray-50 transition-colors" download={'planilla_inscirpcion2026.pdf'}>
                           <Download className="h-5 w-5 text-institutional mr-3" />
                           <div>
                             <span className="block font-medium text-gray-800">Formulario de Inscripción</span>

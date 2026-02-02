@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,9 +11,9 @@ const Footer = () => {
           {/* Institute Info */}
           <div>
             <img 
-              src="https://i.ibb.co/yFRH32dx/sedes-portada.png" 
+              src="assets/images/logo-extended.png" 
               alt="Sedes Sapientiae Logo" 
-              className="h-20 mb-4" 
+              className="h-20 mb-4 " 
             />
             <h3 className="text-xl font-bold mb-4">Instituto Sedes Sapientiae</h3>
             <p className="text-gray-300 mb-4">
@@ -90,6 +90,15 @@ const Footer = () => {
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/school/instituto-sedes-sapientiae-gualeguaychu" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-institutional-light hover:bg-institutional-dark p-2 rounded-full transition"
+                aria-label="Linkedin"
+              >
+                <Linkedin className="h-5 w-5" />
               </a>
               <a 
                 href="https://www.instagram.com/sedessapientiaegchu/" 
